@@ -86,19 +86,8 @@ public class so_thread : MonoBehaviour
                             Debug.Log("passing_false");
                         }
                         pixels_handle_crop_.Free();
-
-                    }
-                    catch (ThreadAbortException e)
-                    {
-                        Debug.Log(e.ToString());
-                        throw new InvalidOperationException("crack");
-                    }
                 }
-                else
-                {
-                    //Debug.Log("webcam_pause");
-                }
-
+                
                 Thread.Sleep(10);
             }
         }
